@@ -1,0 +1,83 @@
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 380px;
+  gap: 32px;
+  align-items: start;
+}
+
+.about-bio {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.about-intro {
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--accent);
+  letter-spacing: 0.04em;
+  line-height: 1.5;
+}
+
+.about-bio p {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+/* Education column */
+.about-edu {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.about-edu-label {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  color: var(--text-muted);
+  letter-spacing: 0.14em;
+  margin-bottom: 4px;
+}
+
+.edu-card {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.edu-degree {
+  font-family: var(--font-display);
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  letter-spacing: 0.06em;
+}
+
+.edu-school {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.edu-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 4px;
+}
+
+.edu-period {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  color: var(--text-muted);
+  letter-spacing: 0.06em;
+}
+
+.edu-gpa {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  color: var(--accent);
+  letter-spacing: 0.08em;
+}

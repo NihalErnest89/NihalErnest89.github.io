@@ -1,0 +1,81 @@
+.contact-wrap {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 32px;
+  align-items: start;
+  margin-bottom: 80px;
+}
+
+.contact-message {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.contact-heading {
+  font-family: var(--font-display);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  color: var(--accent);
+}
+
+.contact-body {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.contact-btn {
+  align-self: flex-start;
+  margin-top: 8px;
+}
+
+/* Link cards */
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.contact-link {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  text-decoration: none;
+  transition: all 0.25s;
+}
+
+.contact-link:hover .contact-link-val {
+  color: var(--accent);
+}
+
+.contact-link-label {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  color: var(--text-muted);
+  letter-spacing: 0.12em;
+}
+
+.contact-link-val {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  transition: color 0.2s;
+}
+
+/* Footer */
+.footer-bar {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 28px;
+  border-top: 1px solid var(--accent-border);
+}
+
+.footer-text {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.14em;
+  color: var(--text-muted);
+}
