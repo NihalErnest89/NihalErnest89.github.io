@@ -22,7 +22,7 @@
   --section-pad: 100px 0;
 }
 
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; overflow-x: hidden; }
 
 body {
   background-color: var(--bg-primary);
