@@ -5,6 +5,10 @@
   align-items: start;
 }
 
+@media (max-width: 768px) {
+  .about-grid { grid-template-columns: 1fr; }
+}
+
 .about-bio {
   display: flex;
   flex-direction: column;

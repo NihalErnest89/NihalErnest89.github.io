@@ -124,3 +124,7 @@
   95%  { opacity: 1; }
   100% { top: 100vh; opacity: 0; }
 }
+
+@media (max-width: 768px) {
+  .hud-corner { display: none; }
+}

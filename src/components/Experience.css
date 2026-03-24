@@ -103,3 +103,9 @@
   flex-wrap: wrap;
   gap: 8px;
 }
+
+@media (max-width: 768px) {
+  .exp-item { gap: 14px; }
+  .exp-header { flex-direction: column; gap: 4px; }
+  .exp-period { white-space: normal; }
+}

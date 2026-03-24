@@ -6,6 +6,11 @@
   margin-bottom: 80px;
 }
 
+@media (max-width: 768px) {
+  .contact-wrap { grid-template-columns: 1fr; }
+  .footer-bar { flex-direction: column; gap: 6px; }
+}
+
 .contact-message {
   display: flex;
   flex-direction: column;

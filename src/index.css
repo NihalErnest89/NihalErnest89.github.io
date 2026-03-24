@@ -107,6 +107,16 @@ body::after {
   z-index: 2;
 }
 
+@media (max-width: 768px) {
+  .section-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .hud-sector-label {
+    right: 20px;
+  }
+}
+
 .section-header {
   display: flex;
   align-items: center;
