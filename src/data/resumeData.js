@@ -4,7 +4,7 @@ export const resumeData = {
   roles: ["Software Engineer", "ML Engineer", "Full Stack Developer", "AI Systems Builder"],
   tagline: "M.S. Computer Science · Bay Area, CA",
   location: "Gilroy, CA",
-  email: "nernest2002@gmail.com",
+  email: "nihal.ernest@gmail.com",
   github: "https://github.com/NihalErnest89",
   linkedin: "https://www.linkedin.com/in/nihal-ernest/",
 

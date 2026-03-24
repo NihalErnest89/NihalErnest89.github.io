@@ -36,6 +36,10 @@ export default function Contact() {
               <span className="contact-link-label">// LINKEDIN</span>
               <span className="contact-link-val">Nihal Ernest</span>
             </a>
+            <a href="/resume.pdf" target="_blank" rel="noreferrer" className="contact-link hud-card">
+              <span className="contact-link-label">// RESUME</span>
+              <span className="contact-link-val">View / Download PDF</span>
+            </a>
           </div>
         </div>
 

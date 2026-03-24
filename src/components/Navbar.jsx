@@ -71,9 +71,14 @@ export default function Navbar() {
           ))}
         </div>
 
-        <div className="nav-status">
-          <span className="nav-status-dot" />
-          <span className="nav-status-text">AVAILABLE FOR HIRE</span>
+        <div className="nav-right">
+          <a href="/resume.pdf" target="_blank" rel="noreferrer" className="nav-resume-btn">
+            RESUME
+          </a>
+          <div className="nav-status">
+            <span className="nav-status-dot" />
+            <span className="nav-status-text">AVAILABLE FOR HIRE</span>
+          </div>
         </div>
 
         <button className="nav-hamburger" onClick={() => setMenuOpen(o => !o)} aria-label="Menu">

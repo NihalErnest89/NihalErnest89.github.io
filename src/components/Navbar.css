@@ -109,6 +109,29 @@
   width: 100%;
 }
 
+/* ── Right group ── */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-resume-btn {
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.14em;
+  color: var(--accent);
+  border: 1px solid rgba(0,212,255,0.35);
+  padding: 5px 12px;
+  text-decoration: none;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.nav-resume-btn:hover {
+  background: rgba(0,212,255,0.08);
+  border-color: var(--accent);
+}
+
 /* ── Status indicator ── */
 .nav-status {
   display: flex;
@@ -230,7 +253,7 @@
   }
 
   .nav-links,
-  .nav-status {
+  .nav-right {
     display: none;
   }
 
