@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import './Navbar.css';
 
 const links = [
@@ -13,16 +13,39 @@ export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [active, setActive] = useState('');
   const [menuOpen, setMenuOpen] = useState(false);
+  const [scanning, setScanning] = useState(false);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40);
-    window.addEventListener('scroll', onScroll);
+    window.addEventListener('scroll', onScroll, { passive: true });
     return () => window.removeEventListener('scroll', onScroll);
+  }, []);
+
+  // Auto-track active section on scroll
+  useEffect(() => {
+    const onScroll = () => {
+      const sections = document.querySelectorAll('section[id]');
+      let current = '';
+      sections.forEach(s => {
+        if (s.getBoundingClientRect().top <= 120) current = `#${s.id}`;
+      });
+      setActive(current);
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
+
+  const triggerScan = useCallback(() => {
+    setScanning(false);
+    requestAnimationFrame(() => requestAnimationFrame(() => setScanning(true)));
+    setTimeout(() => setScanning(false), 480);
   }, []);
 
   const closeMenu = (href) => {
     setActive(href);
     setMenuOpen(false);
+    triggerScan();
   };
 
   return (
@@ -40,7 +63,7 @@ export default function Navbar() {
               key={l.label}
               href={l.href}
               className={`nav-link ${active === l.href ? 'active' : ''}`}
-              onClick={() => setActive(l.href)}
+              onClick={() => { setActive(l.href); triggerScan(); }}
             >
               <span className="nav-link-index">0{i+1}</span>
               {l.label}
@@ -81,6 +104,7 @@ export default function Navbar() {
         </div>
       </div>
       {menuOpen && <div className="nav-drawer-backdrop" onClick={() => setMenuOpen(false)} />}
+      {scanning && <div className="nav-scan-flash" />}
     </>
   );
 }

@@ -223,6 +223,44 @@
   animation: pulse-glow 3s ease-in-out infinite;
 }
 
+/* ── Mobile ── */
+@media (max-width: 768px) {
+  .hero {
+    padding: 0 24px;
+    overflow: visible;
+  }
+
+  .hero-content {
+    flex-direction: column;
+    gap: 36px;
+    padding-top: 100px;
+    padding-bottom: 80px;
+    text-align: center;
+  }
+
+  .hero-right {
+    display: flex;
+    justify-content: center;
+  }
+
+  .hud-orb-wrap {
+    width: 240px;
+    height: 240px;
+  }
+
+  .orb-readout {
+    bottom: -60px;
+  }
+
+  .hero-ctas {
+    justify-content: center;
+  }
+
+  .hero-role-wrap {
+    justify-content: center;
+  }
+}
+
 /* ── Scroll hint ── */
 /* ── Reboot overlay ── */
 .reboot-overlay {
