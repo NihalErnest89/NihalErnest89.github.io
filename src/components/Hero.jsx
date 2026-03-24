@@ -257,13 +257,7 @@ function HeroContent({ power, onReactorClick }) {
             {cv && <span className="hero-cursor">_</span>}
           </div>
           <p className={`hero-tagline ${cv ? 'visible' : ''}`}>{resumeData.tagline}</p>
-          <div className={`hero-stats ${cv ? 'visible' : ''}`}>
-            <div className="stat"><span className="stat-val">3.91</span><span className="stat-label">M.S. GPA</span></div>
-            <div className="stat-divider" />
-            <div className="stat"><span className="stat-val">3+</span><span className="stat-label">INTERNSHIPS</span></div>
-            <div className="stat-divider" />
-            <div className="stat"><span className="stat-val">UCSC</span><span className="stat-label">M.S. CS</span></div>
-          </div>
+
           <div className={`hero-ctas ${cv ? 'visible' : ''}`}>
             <a href="#projects" className="btn-primary">VIEW PROJECTS</a>
             <a href="#contact" className="btn-ghost">CONTACT</a>

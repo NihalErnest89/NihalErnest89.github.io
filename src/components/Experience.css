@@ -67,8 +67,8 @@
 
 .exp-period {
   font-family: var(--font-mono);
-  font-size: 0.65rem;
-  color: var(--text-muted);
+  font-size: 0.82rem;
+  color: var(--text-secondary);
   letter-spacing: 0.06em;
   white-space: nowrap;
   padding-top: 2px;
