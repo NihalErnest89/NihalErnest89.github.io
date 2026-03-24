@@ -22,22 +22,28 @@ export default function Navbar() {
   return (
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <a href="#home" className="nav-logo">
-        <span className="logo-bracket">[</span>
-        N.E.
-        <span className="logo-bracket">]</span>
+        <span className="nav-logo-bracket" />
+        <span className="nav-logo-text">N.E.</span>
+        <span className="nav-logo-sub">PORTFOLIO</span>
       </a>
 
       <div className="nav-links">
-        {links.map((l) => (
+        {links.map((l, i) => (
           <a
             key={l.label}
             href={l.href}
             className={`nav-link ${active === l.href ? 'active' : ''}`}
             onClick={() => setActive(l.href)}
           >
+            <span className="nav-link-index">0{i+1}</span>
             {l.label}
           </a>
         ))}
+      </div>
+
+      <div className="nav-status">
+        <span className="nav-status-dot" />
+        <span className="nav-status-text">AVAILABLE FOR HIRE</span>
       </div>
     </nav>
   );

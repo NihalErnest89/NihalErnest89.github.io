@@ -13,24 +13,26 @@ export default function About() {
 
         <div className="about-grid">
           <div className="about-bio hud-card">
-            <p className="about-intro">
-              I'm Nihal — a recent M.S. Computer Science graduate from UC Santa Cruz.
+            <p>
+              I'm a software engineer recently graduated with an M.S. in Computer Science
+              from UC Santa Cruz. I like building apps, especially when I get to use
+              interesting technologies to fuel my passion or solve everyday problems.
             </p>
             <p>
-              Across three software engineering internships building AI-powered products on
-              Azure and AWS, I've found what I enjoy most: owning things end-to-end, from
-              backend logic to user-facing experience.
+              I've been into Formula One for years, so I built a prediction app with PyTorch
+              and React trained on real telemetry data. I go fishing a lot, so I'm building a
+              platform for my group to log catches, visualize them on maps, and get suggestions
+              for future trips.
             </p>
             <p>
-              That instinct doesn't switch off outside of work. I've followed Formula One
-              for years, and eventually I had to ask — can I actually predict race outcomes?
-              That turned into a full-stack ML application trained on real F1 telemetry data.
-              Same with fishing — my friends and I kept hitting the same frustration: there's
-              no platform that lets you log catches the way you actually want to. So I'm
-              building one.
+              I carry this passion and energy into my professional work. Across three
+              internships, I've deployed LLM-integrated web apps, built automation pipelines
+              that informed multi-million dollar decisions, and deployed full-stack systems on
+              Azure and AWS, end-to-end.
             </p>
             <p>
-              I'm drawn to AI, systems, and products that solve real problems.
+              I'm looking for full-time software engineering roles, especially on teams
+              building AI-powered products where I can take real ownership.
             </p>
           </div>
 

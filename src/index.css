@@ -13,12 +13,12 @@
   --accent-glow: rgba(0, 212, 255, 0.12);
   --accent-border: rgba(0, 212, 255, 0.25);
   --accent-hover: rgba(0, 212, 255, 0.08);
-  --text-primary: #d0eaf5;
-  --text-secondary: #6a9fb8;
-  --text-muted: #2a5a78;
+  --text-primary: #e0f2ff;
+  --text-secondary: #9dcce6;
+  --text-muted: #4a86a8;
   --font-display: 'Orbitron', monospace;
-  --font-mono: 'Share Tech Mono', monospace;
-  --font-body: 'Rajdhani', sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+  --font-body: 'Inter', sans-serif;
   --section-pad: 100px 0;
 }
 

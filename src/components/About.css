@@ -21,9 +21,9 @@
 }
 
 .about-bio p {
-  color: var(--text-secondary);
-  font-size: 1rem;
-  line-height: 1.75;
+  color: #b8d8ed;
+  font-size: 1.05rem;
+  line-height: 1.8;
 }
 
 /* Education column */
@@ -69,15 +69,16 @@
 }
 
 .edu-period {
-  font-family: var(--font-mono);
-  font-size: 0.65rem;
-  color: var(--text-muted);
-  letter-spacing: 0.06em;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  letter-spacing: 0.02em;
 }
 
 .edu-gpa {
-  font-family: var(--font-mono);
-  font-size: 0.65rem;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 600;
   color: var(--accent);
-  letter-spacing: 0.08em;
+  letter-spacing: 0.04em;
 }

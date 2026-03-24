@@ -35,7 +35,6 @@
 /* ── Left ── */
 .hero-left {
   flex: 1;
-  animation: fadeInUp 0.8s ease both;
 }
 
 .hero-label {
@@ -58,6 +57,20 @@
   margin-bottom: 14px;
   animation: text-flicker 12s infinite;
 }
+
+.hero-role-wrap,
+.hero-tagline,
+.hero-stats,
+.hero-ctas {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.hero-role-wrap.visible { opacity: 1; transform: none; transition-delay: 0s; }
+.hero-tagline.visible   { opacity: 1; transform: none; transition-delay: 0.15s; }
+.hero-stats.visible     { opacity: 1; transform: none; transition-delay: 0.3s; }
+.hero-ctas.visible      { opacity: 1; transform: none; transition-delay: 0.5s; }
 
 .hero-role-wrap {
   display: flex;
@@ -146,26 +159,108 @@
 .hud-orb-svg {
   width: 100%;
   height: 100%;
-  filter: drop-shadow(0 0 12px rgba(0,212,255,0.35));
 }
 
 .orb-center {
   animation: pulse-glow 2.5s ease-in-out infinite;
 }
 
+/* Power readout below reactor */
+.orb-readout {
+  position: absolute;
+  bottom: -68px;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.orb-pwr {
+  font-family: var(--font-mono);
+  font-size: 1.3rem;
+  letter-spacing: 0.18em;
+  margin: 0;
+}
+
+.orb-warning {
+  font-family: var(--font-mono);
+  font-size: 1rem;
+  letter-spacing: 0.14em;
+  margin: 0;
+  animation: text-flicker 0.8s infinite;
+}
+
+.orb-warning--critical {
+  color: rgba(255, 60, 60, 0.95);
+  text-shadow: 0 0 8px rgba(255, 60, 60, 0.8);
+}
+
+.orb-warning--high {
+  color: rgba(255, 140, 0, 0.9);
+  text-shadow: 0 0 6px rgba(255, 120, 0, 0.6);
+}
+
+.orb-warning--elevated {
+  color: rgba(255, 210, 0, 0.85);
+  animation: none;
+}
+
 .orb-ping {
   animation: ping 2.5s ease-out infinite;
 }
 
+.orb-ping-2 {
+  animation: ping 2.5s ease-out infinite 1.2s;
+}
+
 .orb-glow {
   position: absolute;
-  inset: 0;
+  inset: -20px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(0,212,255,0.06) 0%, transparent 70%);
   pointer-events: none;
+  animation: pulse-glow 3s ease-in-out infinite;
 }
 
 /* ── Scroll hint ── */
+/* ── Reboot overlay ── */
+.reboot-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+  transition: background 0.5s ease, opacity 0.7s ease;
+}
+
+.reboot-stage-0 { background: rgba(0, 220, 255, 0.45); }
+.reboot-stage-1 { background: #000; }
+.reboot-stage-2 { background: #000; }
+.reboot-stage-3 { background: #000; }
+.reboot-stage-4 { background: #000; opacity: 0; pointer-events: none; }
+
+.reboot-overload-text {
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  color: #ff4444;
+  text-shadow: 0 0 20px rgba(255,68,68,0.9), 0 0 40px rgba(255,68,68,0.4);
+  animation: text-flicker 0.4s infinite;
+}
+
+.reboot-booting-text {
+  font-family: var(--font-mono);
+  font-size: 1rem;
+  letter-spacing: 0.2em;
+  color: var(--accent);
+  text-shadow: 0 0 12px var(--accent);
+}
+
 .hero-scroll-hint {
   position: absolute;
   bottom: 36px;

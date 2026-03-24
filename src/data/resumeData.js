@@ -6,7 +6,7 @@ export const resumeData = {
   location: "Gilroy, CA",
   email: "nernest2002@gmail.com",
   github: "https://github.com/NihalErnest89",
-  linkedin: "#", // update with your LinkedIn URL
+  linkedin: "https://www.linkedin.com/in/nihal-ernest/",
 
   education: [
     {
