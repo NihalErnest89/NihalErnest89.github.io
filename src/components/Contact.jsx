@@ -16,7 +16,7 @@ export default function Contact() {
             <p className="contact-heading">OPEN TO OPPORTUNITIES</p>
             <p className="contact-body">
               Looking for full-time software engineering roles. If you're building something
-              interesting in AI, full-stack systems, or anything in between — let's talk.
+              interesting in AI, full-stack systems, or anything in between — let's connect.
             </p>
             <a href={`mailto:${email}`} className="btn-primary contact-btn">
               SEND A MESSAGE

@@ -1,4 +1,5 @@
 import { useState, useEffect, useCallback, useRef } from 'react';
+import { createPortal } from 'react-dom';
 import { resumeData } from '../data/resumeData';
 import './Hero.css';
 
@@ -53,11 +54,12 @@ function RebootOverlay({ onReboot, onDone }) {
     return () => timers.forEach(clearTimeout);
   }, [onReboot, onDone]);
 
-  return (
+  return createPortal(
     <div className={`reboot-overlay reboot-stage-${stage}`}>
       {stage >= 2 && <p className="reboot-overload-text">⚡ SYSTEM OVERLOAD</p>}
       {stage >= 3 && <p className="reboot-booting-text">// REBOOTING...</p>}
-    </div>
+    </div>,
+    document.body
   );
 }
 
