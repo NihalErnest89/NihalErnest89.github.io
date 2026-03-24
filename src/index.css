@@ -115,6 +115,9 @@ body::after {
   .hud-sector-label {
     right: 20px;
   }
+  .hud-card {
+    padding: 20px 18px;
+  }
 }
 
 .section-header {

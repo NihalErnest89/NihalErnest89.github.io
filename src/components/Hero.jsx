@@ -283,6 +283,12 @@ export default function Hero() {
   const [overloading, setOverloading] = useState(false);
   const [rebootKey,  setRebootKey]  = useState(0);
 
+  // Lock scroll during overload/reboot
+  useEffect(() => {
+    document.body.style.overflow = overloading ? 'hidden' : '';
+    return () => { document.body.style.overflow = ''; };
+  }, [overloading]);
+
   // Power decay
   useEffect(() => {
     if (power <= 0 || overloading) return;
