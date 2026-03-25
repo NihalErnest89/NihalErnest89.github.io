@@ -21,6 +21,47 @@
   align-items: center;
 }
 
+.project-header-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.project-card--linked {
+  cursor: pointer;
+}
+
+.project-card--linked:hover {
+  border-color: rgba(0,212,255,0.6);
+  box-shadow: 0 0 32px var(--accent-glow), inset 0 0 24px rgba(0,212,255,0.04);
+}
+
+.project-link-hint {
+  font-size: 0.85rem;
+  color: var(--accent-dim);
+  transition: color 0.2s;
+}
+
+.project-card--linked:hover .project-link-hint {
+  color: var(--accent);
+}
+
+.project-view-hint {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.14em;
+  color: var(--accent);
+  opacity: 0;
+  transform: translateY(4px);
+  transition: opacity 0.2s, transform 0.2s;
+  margin-top: 4px;
+}
+
+.project-card--linked:hover .project-view-hint {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .project-index {
   font-family: var(--font-mono);
   font-size: 0.65rem;

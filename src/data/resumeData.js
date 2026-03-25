@@ -13,7 +13,7 @@ export const resumeData = {
       degree: "M.S. Computer Science",
       school: "University of California, Santa Cruz",
       period: "Sep. 2024 – Mar. 2026",
-      gpa: "3.91",
+      gpa: "3.85",
     },
     {
       degree: "B.S. (Honors) Computer Science",
@@ -62,6 +62,7 @@ export const resumeData = {
   projects: [
     {
       name: "Formula Forecast",
+      link: "https://nihalernest89.github.io/Formula-Forecast/",
       period: "Sep. 2025 – Present",
       description:
         "Full-stack ML application for real-time Formula One race outcome predictions, born from a passion for the sport.",

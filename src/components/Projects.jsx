@@ -13,10 +13,15 @@ export default function Projects() {
 
         <div className="projects-grid">
           {projects.map((p, i) => (
-            <div key={i} className="project-card hud-card">
+            <div key={i} className={`project-card hud-card ${p.link ? 'project-card--linked' : ''}`}
+              onClick={() => p.link && window.open(p.link, '_blank', 'noreferrer')}
+            >
               <div className="project-header">
                 <span className="project-index">// {String(i + 1).padStart(2, '0')}</span>
-                <span className="project-period">{p.period}</span>
+                <div className="project-header-right">
+                  {p.link && <span className="project-link-hint">↗</span>}
+                  <span className="project-period">{p.period}</span>
+                </div>
               </div>
               <h3 className="project-name">{p.name}</h3>
               <p className="project-desc">{p.description}</p>
@@ -33,6 +38,7 @@ export default function Projects() {
                   <span key={t} className="tag">{t}</span>
                 ))}
               </div>
+              {p.link && <div className="project-view-hint">VIEW PROJECT ↗</div>}
             </div>
           ))}
         </div>
