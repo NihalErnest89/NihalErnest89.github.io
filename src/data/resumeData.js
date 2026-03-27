@@ -27,13 +27,13 @@ export const resumeData = {
     {
       company: "Stealth Startup",
       role: "Software Engineering Intern",
-      period: "Jun. 2025 – Dec. 2025",
+      period: "Jun. 2025 – Present",
       bullets: [
-        "Designed and deployed automation workflows for complex web interactions using an agent-based approach, including resilient web-crawlers for JavaScript-heavy dynamic pages.",
-        "Developed a RESTful API using Flask for LLM-powered data analysis, integrating external APIs on Azure and AWS.",
-        "Created serverless Slack bot functions on Supabase used in multi-million dollar investment decisions.",
+        "Architected an LLM agent platform using OpenClaw and MCP, integrating a Flask API and external data APIs, deployed on AWS with a Slack integration — leveraged in multi-million dollar decisions.",
+        "Engineered resilient web scrapers and parallel data collection pipelines for JavaScript-heavy dynamic pages.",
+        "Implemented multi-source geospatial and REST API data fusion with an SQLite caching layer to reduce redundant network calls across automated pipelines.",
       ],
-      tags: ["Flask", "Azure", "AWS", "Supabase", "LLM", "Python"],
+      tags: ["Flask", "AWS", "OpenClaw", "MCP", "SQLite", "Python"],
     },
     {
       company: "Legal Forensics AI",
@@ -74,12 +74,13 @@ export const resumeData = {
     },
     {
       name: "Slide Generation",
-      period: "Mar. 2025 – Present",
+      period: "Mar. 2025 – Dec. 2025",
       description:
         "AI-powered slide generation system (graduate capstone) that converts structured JSON into fully branded presentations.",
       bullets: [
-        "Built using Python, GPT-4o-mini, and python-pptx with an intelligent image retrieval and processing pipeline.",
-        "Designed a prompt-engineered, template-based framework for automated, brand-consistent output.",
+        "Built an AI-powered slide generation system using Python, GPT-4o-mini, and python-pptx to convert structured JSON into branded presentations.",
+        "Developed an intelligent image retrieval and processing pipeline to integrate company-specific visuals with dynamic overlays and brand colors.",
+        "Designed a prompt-engineered, template-based content generation framework for automated, brand-consistent presentations.",
       ],
       tags: ["Python", "GPT-4o", "AI", "NLP", "python-pptx"],
     },
@@ -87,12 +88,14 @@ export const resumeData = {
       name: "Discord Bot",
       period: "Jul. 2021 – Present",
       description:
-        "Multi-functional AI-powered Discord bot deployed to 200+ users with RAG, image generation, and real-time data feeds.",
+        "Multi-functional Discord bot deployed to 200+ users with AI features, real-time data feeds, and a companion mobile app.",
       bullets: [
-        "Integrated Llama 3 chat, stable diffusion image generation, and server moderation features.",
-        "Added RAG capabilities and real-time web scraping to ground Llama 3.2 beyond its knowledge cutoff.",
+        "Developed a suite of utilities including a calculator and live updates for YouTube, gaming, music playback, and weather using Python APIs and web scraping.",
+        "Integrated AI-powered features such as Llama 3 chat, stable diffusion image generation, and Discord server moderation.",
+        "Built a mobile app with React Native to make functionality accessible to users outside Discord.",
+        "Deployed for 200+ Discord users to access.",
       ],
-      tags: ["Python", "Llama 3", "RAG", "Stable Diffusion", "Web Scraping"],
+      tags: ["Python", "Llama 3", "Stable Diffusion", "React Native", "Web Scraping"],
     },
     {
       name: "Fishing Platform",
