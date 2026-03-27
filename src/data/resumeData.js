@@ -1,7 +1,7 @@
 export const resumeData = {
   name: "NIHAL ERNEST",
   title: "Software Engineer",
-  roles: ["Software Engineer", "ML Engineer", "Full Stack Developer", "AI Systems Builder"],
+  roles: ["Software Engineer", "Full Stack Developer", "AI Systems Builder"],
   tagline: "M.S. Computer Science · Bay Area, CA",
   location: "Gilroy, CA",
   email: "nihal.ernest@gmail.com",
