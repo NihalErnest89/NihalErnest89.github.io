@@ -265,11 +265,13 @@ section:not(#home).in-view {
 
 /* Section items boot in with stagger (delays set via JS) */
 .section-header,
-.hud-card {
+.hud-card,
+.hud-reveal {
   opacity: 0;
 }
 section.in-view .section-header,
-section.in-view .hud-card {
+section.in-view .hud-card,
+section.in-view .hud-reveal {
   animation: hud-item-boot 0.5s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 @keyframes hud-item-boot {

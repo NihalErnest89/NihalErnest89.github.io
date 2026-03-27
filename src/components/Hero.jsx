@@ -262,7 +262,7 @@ function HeroContent({ power, onReactorClick }) {
 
           <div className={`hero-ctas ${cv ? 'visible' : ''}`}>
             <a href="#projects" className="btn-primary">VIEW PROJECTS</a>
-            <a href="#contact" className="btn-ghost">CONTACT</a>
+            <a href="#contact" className="btn-ghost">LINKS</a>
           </div>
         </div>
 

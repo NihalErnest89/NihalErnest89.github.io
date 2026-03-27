@@ -1,3 +1,33 @@
+.projects-github {
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+}
+
+.github-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.14em;
+  color: var(--text-dim);
+  border: 1px solid var(--border);
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.github-button:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.github-icon {
+  width: 14px;
+  height: 14px;
+}
+
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);

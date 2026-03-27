@@ -33,7 +33,7 @@ export default function App() {
           e.target.classList.add('in-view');
 
           // Stagger delays for header + cards
-          e.target.querySelectorAll('.section-header, .hud-card').forEach((el, i) => {
+          e.target.querySelectorAll('.section-header, .hud-card, .hud-reveal').forEach((el, i) => {
             el.style.animationDelay = `${0.18 + i * 0.13}s`;
           });
 
@@ -63,7 +63,7 @@ export default function App() {
           if (label) label.remove();
 
           // Reset delays so stagger replays next entry
-          e.target.querySelectorAll('.section-header, .hud-card').forEach(el => {
+          e.target.querySelectorAll('.section-header, .hud-card, .hud-reveal').forEach(el => {
             el.style.animationDelay = '';
           });
         }
