@@ -14,7 +14,7 @@ export default function About() {
         <div className="about-grid">
           <div className="about-bio hud-card">
             <p>
-              ‘I’m a software engineer and recent graduate from the UC Santa Cruz M.S. Computer Science program. 
+              I'm a software engineer and recent graduate from the UC Santa Cruz M.S. Computer Science program. 
               I like building apps, especially when I get to use
               interesting technologies to fuel my passion or solve everyday problems.
             </p>
