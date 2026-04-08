@@ -26,23 +26,23 @@ export const resumeData = {
   experience: [
     {
       company: "Stealth Startup",
-      role: "Software Engineering Intern",
+      role: "Software Engineer",
       period: "Jun. 2025 – Present",
       bullets: [
-        "Architected an LLM agent platform using OpenClaw and MCP, integrating a Flask API and external data APIs, deployed on AWS with a Slack integration — leveraged in multi-million dollar decisions.",
-        "Engineered resilient web scrapers and parallel data collection pipelines for JavaScript-heavy dynamic pages.",
-        "Implemented multi-source geospatial and REST API data fusion with an SQLite caching layer to reduce redundant network calls across automated pipelines.",
+        "Built a full-stack platform with a Python/Flask REST API, SQLite data layer, and Slack client integration via Model Context Protocol (MCP), deployed on AWS — directly informed multi-million dollar investment decisions.",
+        "Engineered parallel data ingestion pipelines with an SQLite caching layer, reducing a 4-hour process to under 20 minutes.",
+        "Designed RESTful API routes aggregating multi-source geospatial and third-party data, handling authentication and structured JSON payloads.",
       ],
-      tags: ["Flask", "AWS", "OpenClaw", "MCP", "SQLite", "Python"],
+      tags: ["Flask", "AWS", "MCP", "SQLite", "Python", "REST API"],
     },
     {
       company: "Legal Forensics AI",
       role: "Software Engineering Intern",
       period: "Jun. 2024 – Sep. 2024",
       bullets: [
-        "Designed and developed a full stack website using Angular and Python with Llama 3 (LLM) on AWS Bedrock.",
-        "Enabled smart data retrieval by integrating an LLM with Court Listener API, allowing search through millions of case law documents.",
-        "Deployed on AWS, ensuring scalable cloud integration and seamless functionality.",
+        "Developed a full-stack web application with an Angular/TypeScript frontend and a Python backend powered by Llama 3 on AWS Bedrock.",
+        "Delivered a search interface over millions of case law documents by integrating the Court Listener REST API, replacing manual filtering workflows.",
+        "Deployed on AWS, configuring cloud infrastructure for scalable document retrieval and LLM-powered query processing.",
       ],
       tags: ["Angular", "AWS", "Python", "Llama 3", "LLM", "AWS Bedrock"],
     },
@@ -51,9 +51,8 @@ export const resumeData = {
       role: "Software Engineering Intern",
       period: "Jun. 2023 – Jun. 2024",
       bullets: [
-        "Designed and deployed Angular web applications on Microsoft Azure, leveraging HTML, CSS, and TypeScript.",
-        "Built backend function apps using Python and SQL to integrate OpenAI's GPT-4 and databases with web apps.",
-        "Configured Azure services (databases, authentication, search functions) for multi-tenant use.",
+        "Built multi-tenant Angular/TypeScript frontends and Python backend function apps on Microsoft Azure, integrating OpenAI GPT-4 and SQL databases via REST endpoints, serving 2 enterprise clients.",
+        "Implemented Azure authentication, database, and search services for production use.",
       ],
       tags: ["Angular", "Azure", "Python", "GPT-4", "TypeScript", "SQL"],
     },
@@ -65,12 +64,34 @@ export const resumeData = {
       link: "https://nihalernest89.github.io/Formula-Forecast/",
       period: "Sep. 2025 – Present",
       description:
-        "Full-stack ML application for real-time Formula One race outcome predictions, born from a passion for the sport.",
+        "Full-stack F1 prediction app with a custom neural network and Huber-based loss function, achieving 89% accuracy within 3 positions.",
       bullets: [
-        "Architected a full-stack ML application combining PyTorch neural networks, FastAPI REST API, and React UI.",
-        "Performed feature engineering on F1 telemetry data — driver metrics, constructor standings, track features — and applied advanced optimization techniques.",
+        "Architected a full-stack F1 prediction app (React + FastAPI + PyTorch) with a custom neural network (128→64→32) and a custom Huber-based loss function, achieving 89% accuracy within 3 positions.",
+        "Built an end-to-end data pipeline ingesting live telemetry via the FastF1 API, engineering 9 features per driver-race, and serving predictions through REST endpoints — with time-aware cross-validation to prevent data leakage.",
       ],
       tags: ["PyTorch", "FastAPI", "React", "Python", "ML"],
+    },
+    {
+      name: "Fishing Platform",
+      period: "Feb. 2025 – Present",
+      description:
+        "A full-stack platform for anglers to log catches, visualize them on maps, and receive data-driven suggestions for future trips.",
+      bullets: [
+        "Built a full-stack catch-logging platform (React + Python REST API) where anglers record fish species, weight, photos, location, and conditions — stored in a database-backed metadata layer for historical tracking and analysis.",
+        "Integrated Maps API for interactive geospatial visualization of catch history and built an insight engine that analyzes past trips to suggest future scenarios.",
+      ],
+      tags: ["React", "Python", "Maps API", "REST API", "Full Stack"],
+    },
+    {
+      name: "Discord Bot",
+      period: "Jul. 2021 – Present",
+      description:
+        "Multi-functional Discord bot serving 100+ users with AI features, real-time data feeds, and a companion React Native mobile app.",
+      bullets: [
+        "Launched a Python backend serving 100+ users with real-time integrations to YouTube, weather, and gaming APIs via web scraping and REST API calls.",
+        "Shipped a React Native mobile app extending the platform cross-platform, with Llama 3 chat and Stable Diffusion image generation features.",
+      ],
+      tags: ["Python", "Llama 3", "Stable Diffusion", "React Native", "Web Scraping"],
     },
     {
       name: "Slide Generation",
@@ -83,30 +104,6 @@ export const resumeData = {
         "Designed a prompt-engineered, template-based content generation framework for automated, brand-consistent presentations.",
       ],
       tags: ["Python", "GPT-4o", "AI", "NLP", "python-pptx"],
-    },
-    {
-      name: "Discord Bot",
-      period: "Jul. 2021 – Present",
-      description:
-        "Multi-functional Discord bot deployed to 200+ users with AI features, real-time data feeds, and a companion mobile app.",
-      bullets: [
-        "Developed a suite of utilities including a calculator and live updates for YouTube, gaming, music playback, and weather using Python APIs and web scraping.",
-        "Integrated AI-powered features such as Llama 3 chat, stable diffusion image generation, and Discord server moderation.",
-        "Built a mobile app with React Native to make functionality accessible to users outside Discord.",
-        "Deployed for 200+ Discord users to access.",
-      ],
-      tags: ["Python", "Llama 3", "Stable Diffusion", "React Native", "Web Scraping"],
-    },
-    {
-      name: "Fishing Platform",
-      period: "2025 – Present",
-      description:
-        "A platform built for anglers to log detailed catches, visualize them on maps and timelines, and receive AI-driven suggestions for future trips.",
-      bullets: [
-        "Catch logging with full metadata — species, location, conditions, gear — visualized on interactive maps and a personal timeline.",
-        "Insight engine that analyzes historical catch data to simulate and suggest optimal future fishing scenarios.",
-      ],
-      tags: ["React", "Python", "Maps API", "ML", "Full Stack"],
     },
   ],
 
